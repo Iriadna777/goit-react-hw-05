@@ -1,0 +1,31 @@
+
+
+.container {
+    padding: 20px;
+    
+  }
+  
+  .title {
+    font-size: 2em;
+    color: #333;
+  }
+  
+  .movieList {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .movieItem {
+    width: 16.66%; 
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .movieImage {
+    width: 100%;
+    height: auto;
+  }
+  

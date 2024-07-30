@@ -1,9 +1,21 @@
+/* src/components/Navigation/Navigation.module.css */
+
 .nav {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .active {
-    font-weight: bold;
-  }
-  
+  display: flex;
+  gap: 20px;
+  background-color: #f4f4f4;
+  padding: 10px 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav a.active {
+  color: orange;
+}
+
+.nav a:hover {
+  color: darkorange;
+}
