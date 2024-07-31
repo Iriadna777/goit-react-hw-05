@@ -1,0 +1,16 @@
+.castList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .actor {
+    flex: 0 1 200px;
+    text-align: center;
+  }
+  
+  .actor img {
+    width: 100%;
+    height: auto;
+  }
+  

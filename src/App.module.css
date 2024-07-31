@@ -1,4 +1,4 @@
-.container {
-  padding: 20px;
-  font-family: Arial, sans-serif;
+.app {
+  background-color: #f0fff0; /* Лайтовий ментоловий колір */
+  min-height: 100vh;
 }
