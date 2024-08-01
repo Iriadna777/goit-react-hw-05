@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { getTrendingMovies } from '../../api/tmdb';
-import styles from './HomePage.module.css'; // Переконайтесь, що цей файл існує
+import styles from './HomePage.module.css'; 
 import MovieList from '../../components/MovieList/MovieList';
 
 const HomePage = () => {

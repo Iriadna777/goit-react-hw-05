@@ -1,27 +1,3 @@
-/* .list {
-    list-style: none;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
-  }
-  
-  .list li {
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  .list a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  .list img {
-    width: 100%;
-    height: auto;
-  }
-   */
-
    .movieList {
     display: grid;
     grid-template-columns: repeat(6, 1fr); 

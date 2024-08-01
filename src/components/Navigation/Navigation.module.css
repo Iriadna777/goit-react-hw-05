@@ -8,10 +8,14 @@
 .nav a {
   text-decoration: none;
   color: inherit;
-  
+  font-weight: bold;
+
 }
 
-.active {
+.nav a.active {
   color: orange;
 }
 
+.nav a:hover {
+  color: orange;
+}

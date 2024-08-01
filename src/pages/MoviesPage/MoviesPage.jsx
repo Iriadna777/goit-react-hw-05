@@ -1,5 +1,3 @@
-// src/pages/MoviesPage/MoviesPage.jsx
-
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { searchMovies } from '../../api/tmdb';

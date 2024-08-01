@@ -10,9 +10,8 @@ const MovieCast = lazy(() => import('./components/MovieCast/MovieCast'));
 const MovieReviews = lazy(() => import('./components/MovieReviews/MovieReviews'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage/NotFoundPage'));
 
-// 
 const App = () => (
-  <Router>
+  <>
     <Navigation />
     <Suspense fallback={<div>Loading...</div>}>
       <Routes>
@@ -25,7 +24,7 @@ const App = () => (
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Suspense>
-  </Router>
+  </>
 );
 
 export default App;
