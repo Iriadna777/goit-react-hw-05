@@ -1,8 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { useParams, Link, Routes, Route, useLocation } from 'react-router-dom';
+import { useParams, Link, useLocation, Outlet } from 'react-router-dom';
 import { getMovieDetails } from '../../api/tmdb';
-import MovieCast from '../../components/MovieCast/MovieCast';
-import MovieReviews from '../../components/MovieReviews/MovieReviews';
+// import MovieCast from '../../components/MovieCast/MovieCast';
+// import MovieReviews from '../../components/MovieReviews/MovieReviews';
 import GoBackButton from '../../components/GoBackButton/GoBackButton';
 import styles from './MovieDetailsPage.module.css';
 
@@ -20,7 +20,7 @@ const MovieDetailsPage = () => {
 
   return (
     <div className={styles.container}>
-      <GoBackButton />
+      <GoBackButton previousLocation={previousLocationRef.current} />
       <div className={styles.movieDetails}>
         <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} />
         <div className={styles.info}>
@@ -43,10 +43,7 @@ const MovieDetailsPage = () => {
           </li>
         </ul>
         </div>
-        <Routes>
-          <Route path="cast" element={<MovieCast />} />
-          <Route path="reviews" element={<MovieReviews />} />
-        </Routes>
+        <Outlet />
       </div>
   );
 };

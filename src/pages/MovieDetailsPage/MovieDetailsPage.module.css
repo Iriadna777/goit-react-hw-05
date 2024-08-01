@@ -20,19 +20,21 @@
    .movieDetails {
     display: flex;
     gap: 20px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
   }
 
   .info {
-    flex-grow: 1;
+    flex: 1;
   }
   
   .additionalInfo {
     margin-top: 20px;
+    text-decoration: none;
+  color: black;
   }
   
   .list {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
   }
   

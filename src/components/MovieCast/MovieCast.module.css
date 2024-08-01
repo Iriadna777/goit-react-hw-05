@@ -1,16 +1,25 @@
-.castList {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+.cast {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   }
   
   .actor {
-    flex: 0 1 200px;
+    width: calc(12.5% - 10px);
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 8px;
     text-align: center;
   }
   
   .actor img {
     width: 100%;
     height: auto;
+  }
+
+  .actor p {
+    margin-top: 10px;
   }
   

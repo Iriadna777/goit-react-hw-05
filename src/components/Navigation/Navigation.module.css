@@ -1,5 +1,3 @@
-/* src/components/Navigation/Navigation.module.css */
-
 .nav {
   display: flex;
   gap: 20px;
@@ -9,14 +7,11 @@
 
 .nav a {
   text-decoration: none;
-  color: #333;
+  color: inherit;
   
 }
 
-.nav a.active {
+.active {
   color: orange;
 }
 
-.nav a:hover {
-  color: darkorange;
-}

@@ -1,5 +1,7 @@
 .reviews {
     margin-top: 20px;
+    list-style: none;
+  padding: 0;
   }
   
   .review {
