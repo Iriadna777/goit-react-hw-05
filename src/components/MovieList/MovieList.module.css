@@ -1,5 +1,4 @@
-/* src/components/MovieList/MovieList.module.css */
-.list {
+/* .list {
     list-style: none;
     padding: 0;
     display: grid;
@@ -20,5 +19,38 @@
   .list img {
     width: 100%;
     height: auto;
+  }
+   */
+
+   .movieList {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .movieItem {
+    text-align: center;
+  }
+  
+  .movieImage {
+    width: 100%;
+    height: auto;
+  }
+  
+  .movieItem p {
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .movieItem a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .movieItem a:hover {
+    color: orange;
   }
   

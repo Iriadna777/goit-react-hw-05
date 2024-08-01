@@ -16,14 +16,14 @@ const MovieReviews = () => {
   }
 
   return (
-    <ul className={styles.reviewsList}>
+    <div className={styles.reviews}>
       {reviews.map(review => (
-        <li key={review.id}>
-          <h3>Author: {review.author}</h3>
+        <div key={review.id} className={styles.review}>
+          <h4 className={styles.author}>Author: {review.author}</h4>
           <p>{review.content}</p>
-        </li>
+        </div>
       ))}
-    </ul>
+    </div>
   );
 };
 

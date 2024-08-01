@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { useParams, Link, Routes, Route, useLocation } from 'react-router-dom';
 import { getMovieDetails } from '../../api/tmdb';
 import MovieCast from '../../components/MovieCast/MovieCast';
@@ -10,6 +10,7 @@ const MovieDetailsPage = () => {
   const { movieId } = useParams();
   const [movie, setMovie] = useState(null);
   const location = useLocation();
+  const previousLocationRef = useRef(location.state?.from);
 
   useEffect(() => {
     getMovieDetails(movieId).then(setMovie);
@@ -41,12 +42,12 @@ const MovieDetailsPage = () => {
             <Link to="reviews" state={{ from: location.state?.from }}>Reviews</Link>
           </li>
         </ul>
+        </div>
         <Routes>
           <Route path="cast" element={<MovieCast />} />
           <Route path="reviews" element={<MovieReviews />} />
         </Routes>
       </div>
-    </div>
   );
 };
 
